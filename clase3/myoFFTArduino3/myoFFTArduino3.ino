@@ -82,7 +82,6 @@ void fftToServo() {
       //      Serial.print("\t");
       //      Serial.print(vReal[k], 1);    //View only this line in serial plotter to visualize the bins
 
-
       x = vReal[k];
 
       samples.add(x);
@@ -90,7 +89,6 @@ void fftToServo() {
       a = samples.getAverage();
       m = samples.getMedian();
       h = samples.getHighest();
-
 
       //      Serial.print("\t");
       //      Serial.print(x);
@@ -103,12 +101,8 @@ void fftToServo() {
       //      Serial.print("\t");
       //      Serial.println(a);
       //delay(100);
-
-      
     }
-
   }
-
 }
 
 
