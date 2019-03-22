@@ -46,9 +46,13 @@ void loop() {
 
     //Serial.print((i * 1.0 * SAMPLING_FREQUENCY) / SAMPLES, 1);
     //Serial.print(" ");
-    Serial.println(vReal[i], 1);    //View only this line in serial plotter to visualize the bins
+    Serial.print(analogRead(A0)*10);
+    Serial.print(",");
+    Serial.print(analogRead(A1)*10);
+    Serial.print(",");
+    Serial.println(vReal[i]*10, 1);    //View only this line in serial plotter to visualize the bins
   }
 
-  //delay(1000);  //Repeat the process every second OR:
-  while (1);      //Run code once
+  delay(1);  //Repeat the process every second OR:
+  //while (1);      //Run code once
 }
